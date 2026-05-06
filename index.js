@@ -17,7 +17,7 @@ db.on('error', console.error.bind(console, 'connection error'));
 db.once('open', () => console.log('Now connected to MongoDB Atlas'));
 
 const corsOption = {
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173","https://blogwebsite-client.vercel.app"],
     credentials: true,
     optionsSuccessStatus: 200
 };
